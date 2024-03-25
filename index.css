@@ -1,0 +1,400 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    font-family: 'Playfair Display';
+}
+
+.left {
+    width: 70%;
+    background-color: whitesmoke;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navbar {
+    width: 100vw;
+    height: 10%;
+    padding-inline: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo,
+.nav-link {
+    font-family: 'Playfair Display';
+    color: black;
+
+}
+
+.song-player {
+    position: relative;
+    width: 100%;
+    height: 95%;
+}
+
+.circle-main {
+    width: 60%;
+    height: 90%;
+    border-radius: 50%;
+    background-image: url(./images/background3.jpg);
+    background-size: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-circle {
+    background-color: white;
+    width: 45%;
+    height: 70%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.guitar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24%;
+    height: 102%;
+}
+
+.music-circle {
+    /* background-color: rgb(173, 32, 32); */
+    width: 13%;
+    height: 19%;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    background-image: url(./audios/playlist4/images/woodsheder.jpg);
+    background-size: cover;
+
+}
+
+
+.right {
+    width: 30%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: hidden;
+}
+
+.right::-webkit-scrollbar {
+    display: none;
+}
+
+.search {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.search input {
+    width: 70%;
+    padding-inline: 5%;
+    border: 2px solid rgb(70, 69, 69);
+    color: rgb(129, 126, 126);
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.search button {
+    padding-left: 4%;
+    margin-left: -2px;
+    border: 2px solid rgb(70, 69, 69);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: transparent;
+}
+
+.music {
+    width: 100%;
+    height: 385px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music1 {
+
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+
+}
+
+.music-img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.musicImages {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.song-name {
+    width: 90%;
+    margin: 0px;
+    text-align: center;
+    font-size: large;
+    color: whitesmoke;
+    font-family: 'Playfair Display';
+}
+
+.artist-name {
+    width: 90%;
+    margin: 0px;
+    text-align: center;
+    font-size: x-small;
+    color: whitesmoke;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.play-line {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputbar {
+    width: 100vh;
+    height: 3px;
+    cursor: pointer;
+
+}
+
+#inputbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#inputbar[type="range"]::-webkit-slider-thumb,
+#inputbar[type="range"]::-moz-range-thumb,
+#inputbar[type="range"]::-ms-thumb {
+    opacity: 0;
+}
+
+.btns {
+    width: 90%;
+    height: 20%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-btns1 {
+    height: 65%;
+    width: 11%;
+    border-radius: 50%;
+    border: 1px solid rgb(70, 69, 69);
+    margin: 5%;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+.audio-btns2 {
+    height: 65%;
+    width: 11%;
+    border-radius: 50%;
+    border: 1px solid rgb(70, 69, 69);
+    margin: 5%;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+.audio-btns3 {
+    height: 65%;
+    width: 11%;
+    border-radius: 50%;
+    border: 1px solid rgb(70, 69, 69);
+    margin: 5%;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+
+.recent {
+    width: 100%;
+    height: 1800%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-img1 {
+    width: 30%;
+    height: 100%;
+    background-image: url(./images/music1\ \(2\).jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-inline: 8px;
+}
+
+.recent-img2 {
+    width: 30%;
+    height: 100%;
+    background-image: url(./images/music1\ \(4\).jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-inline: 8px;
+}
+
+.recent-img3 {
+    width: 30%;
+    height: 100%;
+    background-image: url(./images/music1\ \(6\).jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-inline: 8px;
+}
+
+.list {
+    width: 100%;
+    height: 3850%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    overflow: auto;
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+
+}
+
+.first {
+    width: 100%;
+    height: 100%;
+    margin-block: 4px;
+    color: wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    line-height: 25px;
+    font-family: 'Playfair Display';
+
+}
+
+
+
+.left-playlist {
+    height: 100%;
+    width: 30%;
+}
+
+.playlist-img1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./audios/playlist1/playlist1img.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.playlist-img2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./audios/playlist2/playlist2img.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.playlist-img3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./audios/playlist3/playlist3img.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.playlist-img4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./audios/playlist4/playlist4img.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.music-list {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 6px;
+}
+
+.music-list div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.music-list div p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-size: medium;
+}
+
+.time {
+    font-family: 'PT Sans', sans-serif;
+}
